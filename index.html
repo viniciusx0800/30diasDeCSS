@@ -1,12 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+
+      body{
+        text-align: center;
+        background-color: rgba(100, 148, 237, 0.726);
+      }
+
+      button:hover{
+        
+        background-color:  aqua;
+        color: black;
+        cursor: auto;
+      }
+
+      button{
+        background-color: #4CAF50; 
+        color: white; 
+        padding: 15px 32px; 
+        text-align: center; 
+        text-decoration: none; 
+        display: inline-block; 
+        font-size: 16px;
+      }
+
+      .foguetes{
+        margin: 10%;
+        width: 250px;
+        height: 230px;
+        color: transparent;
+      }
+
+      .foguetes:hover{
+        transform: rotate(4.9turn);
+      }
+      
+    </style>
+
+
+
+
+
   </head>
   <body>
-    <p>PAGINA INICIAL</p>
+    <h1>PAGINA INICIAL</h1>
     <button onclick="location.href='./pagina2.html'">Próxima Página</button>
+
+    <div class="foguete">
+      <span>
+        <img class="foguetes" src="assets/foguete02.webp" alt="foguete">
+      </span>
+   </div>
+
   </body>
 </html>
