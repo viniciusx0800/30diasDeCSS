@@ -6,59 +6,13 @@
     
 }
 
-
 body
 {
     margin: 0;
     padding: 0;
-    background-color: rgb(57, 55, 58);
+    background-color: rgb(248, 243, 250);
     min-width: 300px;
     max-width: 1000;
-}
-
-
-
-.box
-{
-    position: static;
-    background: #fff;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    border-radius: 10px;
-    font-size: 3em;
-    font-weight: 700;
-    -webkit-text-stroke: 2px #3cbdb1;
-    color: transparent;
-    cursor: pointer; 
-    width: 100px;
-    height: 80px;
-    cursor: pointer;
-    transform: skew(50deg, -20deg);
-    transition-duration: 0.4s;
-    transition-delay: 0s;
-
-}
-
-.teste:hover{
-    transform: rotate(1.5turn);
-    /* transform: translateY(-2.5em) 
-    skew(50deg, -25deg); */
-    box-shadow: -34px 40px 0px rgba(22, 22, 201, 0.753);
-}
-
-.box:hover
-{
-    color: #3cbdb177;
-    /* transform: translate(-60px,-60px) ; 120 / 2 = 60 */
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15),
-    10px 10px 0 #fff,
-    15px 15px 10px rgba(0, 0, 0, 0.15),
-    20px 20px 0 #fff,
-    30px 30px 30px rgba(0, 0, 0, 0.15),
-    25px 25px 25px rgba(0, 0, 0, 0.15),
-    30px 30px 0px rgba(0, 0, 0, 0.1)
-    ;
 }
 
 header{
@@ -77,11 +31,6 @@ nav{
     padding: 10px;
     width: 90px;
     box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.15),
-
-}
-
-
-button{
 
 }
 
@@ -105,12 +54,11 @@ nav > button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3.5rem;
+    gap: 5.1rem;
     margin: 105px;
-    background-color: #6b6f9642;
     height: 300px;
    
-}
+} 
 
 .inicio{
     margin-top: 2%;
