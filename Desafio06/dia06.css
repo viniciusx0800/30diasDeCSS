@@ -5,11 +5,11 @@
 
 header{
 
-    background-color: rgba(6, 93, 165, 0.644);
+    background-color: #065da5a4;
 }
 
 .titulo{
-    color: aliceblue;
+    color: #f0f8ff;
     display: grid;
     justify-content: center;
     
@@ -33,7 +33,7 @@ nav > button{
 }
 
 nav > button:hover{
-    background-color: rgba(6, 93, 165, 0.644);
+    background-color: #065da5a4;
     color: #ffffff;
     width: 95px;
 }
@@ -62,7 +62,7 @@ h2 span{
     min-width: 300px;
     max-width: 1000px;
     display: contents;
-    animation: animate 2s linear infinite;
+    animation: animaseuputo 2s linear infinite;
 }
 
 /* A pseudo-classe CSS :nth-child() seleciona elementos com base em 
@@ -102,14 +102,14 @@ h2 span:nth-child(11){
     animation-delay: 1.2s;
 }
 
-@keyframes animate{
+@keyframes animaseuputo{
     0%,100%{
-        color: aqua;
-        filter: blur(2px);             
+        color: #00ffff;
+                   
     }
 
     5%,95%{
-        color: rgb(63, 61, 60);
-        filter: blur(0px);
+        color: #3f3d3c;
+        
     }
 }
