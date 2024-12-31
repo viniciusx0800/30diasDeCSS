@@ -79,7 +79,7 @@ nav > button:hover{
     border-radius: inherit;
     box-shadow: 0 0 5px #80e480;
     opacity: 8;
-    animation: pulse 4s ease-out infinite;
+    animation: pulse 6s ease-out infinite;
  }
 
  @keyframes pulse{
