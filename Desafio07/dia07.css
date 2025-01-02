@@ -15,8 +15,9 @@ body{
     text-align: center;
     justify-content: center;
     display: flex;
-
-    
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
 }
 
 .div01{
@@ -28,7 +29,7 @@ body{
  position: relative;
  transition: .2s;
 
- /* animation: move 5s linear infinite;  */
+ animation: move 5s linear infinite; 
 }
 
 .div02{
@@ -37,9 +38,8 @@ body{
   background-color: aliceblue;
   margin: 6px;
   border-radius: 3px;
-  translate: -30px;
 
-  animation: move1 5s linear infinite;
+  animation: move1 2s linear infinite running ;
 }
 
 .div03{
@@ -59,51 +59,49 @@ body{
 }
 
 .div02:nth-child(2){
-    animation-delay: 1.7s;
+    animation-delay: 0;
 }
 
 .div03:nth-child(3){
     animation-delay: 1.9s;
 }
 
-@keyframes move{
+/* @keyframes move{
     0%{
-      translate: 0px;
+      translate: -10px;
     }
     25%{
-        translate: 30px;
-    }
-    50%{
-        translate:  0 30px;
-    }
-    75%{
-        translate: -30px 30px;
-    }
-    100%{
-        translate: 30px 70px;
-    }
-    100%{
-        transform: rotate(360deg);
-    } 
- }
-
- @keyframes move1{
-    0%{
-      translate: -30px;
-    }
-    25%{
-        translate: 0px;
+        translate: 90px;
     }
     50%{
         translate:  0 -30px;
     }
     75%{
-        translate: -30px 30px;
+        translate: 30px 30px;
+    }
+    100%{
+        translate: 30px 70px;
+    }
+    
+ } */
+
+ @keyframes move1{
+    0%{
+      translate: 0;
+    }
+    25%{
+        translate: 0;
+    }
+    50%{
+        translate:  0;
+    }
+    75%{
+        translate: -50px;
     }
    
  }
 
- @keyframes move2{
+ /* @keyframes move2{
     0%{
       translate: 0px;
     }
@@ -117,4 +115,4 @@ body{
         translate:  0 -30px;
     }
     
- }
+ } */
