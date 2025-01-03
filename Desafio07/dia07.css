@@ -1,25 +1,47 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
-    background-color: rgb(10, 9, 10);
+    background-color: rgb(44, 41, 44);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .pai{
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    background-color: aqua;
-    height: 200px;
-    width: 200px;
+  position: relative;
+  width: 300px; 
+  height: 300px;
+
+  animation: rotateDux steps(4) 8s infinite;
 }
 
+/* .pai:nth-child(1)
+   {
+    animation-delay: .5s;
+   } */
+
+@keyframes rotateDux{
+    0%{
+        transform: rotate(360deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.pai::before{
+    content: '';
+    position: absolute;
+    inset: -5px;
+    border: 2px dashed rgb(106, 243, 106);
+}
+/* 
 .div01{
  width: 70px;
  height: 70px;
@@ -30,19 +52,79 @@ body{
  transition: .2s;
 
  animation: move 5s linear infinite; 
-}
+} */
 
-.div02{
-  width: 70px;  
-  height: 70px;
-  background-color: aliceblue;
-  margin: 6px;
-  border-radius: 3px;
+.div01{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: aliceblue;
+    border: 4px solid rgb(0, 25, 252);
+    transform-origin: bottom right;
+    animation: rotateDux steps(4) 8s infinite;
+    animation: animaseuputo 9s linear infinite;
+   
+   }
 
-  animation: move1 2s linear infinite running ;
-}
+   .div01:nth-child(1)
+   {
+    animation-delay: 0.55s;
+   }
+
+ .div02{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    bottom: 0;
+    left: 0px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 4px solid rgb(131, 207, 131);
+    background-color: aliceblue;
+    transform-origin: bottom right;
+    animation: rotateDux steps(4) 8s infinite;
+    animation: animaseuputo 9s linear infinite;
+
+} 
+
+.div02:nth-child(2)
+   {
+    animation-delay: 0.67s;
+   }
 
 .div03{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border: 4px solid rgb(183, 223, 7);
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    top: 44%;
+    left: 54%;
+    transform: translate(-40%, -30%);
+    
+    animation: rotateDux steps(4) 8s infinite;
+    animation: animaseuputo 9s linear infinite;
+   }
+
+   .div03:nth-child(3)
+   {
+    animation-delay: 0.79s;
+   }
+
+@keyframes animaseuputo{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    50%,100%{
+        transform: translate(90deg);
+    }
+}
+
+/* .div03{
   width: 70px;
   height: 70px;
   background-color: aliceblue;
@@ -51,10 +133,10 @@ body{
   translate: 0px;
 
   animation: move2 5s linear infinite;
-}
+} */
 
 
-.div01:nth-child(1){
+/* .div01:nth-child(1){
     animation-delay: 1.5s;
 }
 
@@ -64,7 +146,7 @@ body{
 
 .div03:nth-child(3){
     animation-delay: 1.9s;
-}
+} */
 
 /* @keyframes move{
     0%{
@@ -85,7 +167,7 @@ body{
     
  } */
 
- @keyframes move1{
+ /* @keyframes move1{
     0%{
       translate: 0;
     }
@@ -99,7 +181,7 @@ body{
         translate: -50px;
     }
    
- }
+ } */
 
  /* @keyframes move2{
     0%{
