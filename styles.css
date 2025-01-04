@@ -56,6 +56,15 @@ button {
   transition: background-color 0.2s;
 }
 
+.btn{
+  color: #f8f8f8;
+  background-color: brown;
+}
+
+.btn:hover{
+  background-color: #333;
+}
+
 button:hover {
   transition-duration: 0.5s;
   background-color: #59e7b1;
