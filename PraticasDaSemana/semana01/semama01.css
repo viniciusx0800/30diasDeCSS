@@ -64,6 +64,7 @@ section{
 }
 
 .sol:hover{
+    transition-duration: 9s;
     scale: 1.25;
     
 }
