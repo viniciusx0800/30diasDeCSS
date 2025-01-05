@@ -44,8 +44,9 @@ section{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: linear-gradient(to bottom, #3b250ef3, #c2910b, #ecee85, #cc9f4c, #eb8f43);
-
+    background-image: linear-gradient(to bottom, #221405f3, #8d6e1ad2, #ecee85, #ccb94c, #eb8f43);
+    overflow: hidden;
+    position: relative;
 }
 
 .sol{
@@ -56,6 +57,26 @@ section{
     box-shadow: 0px 0px 40px 20px #eeee89f3;
     background-color: #f7f6f0f8;
     
-    transition-duration: 2s;
-    /* transform: scale(1.5); */
+    
+    animation: pulse 30s linear infinite;
+    
 }
+
+.sol:hover{
+    scale: 1.25;
+    
+}
+
+@keyframes pulse{
+    0%{
+        transform: translateX(50vw);
+      }
+        50%{
+         translate:  -140px -140px;
+        }
+    
+    100%{
+      
+        transform: translateX(-50vw);
+    }
+ }
