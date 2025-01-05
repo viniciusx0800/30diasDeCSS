@@ -46,7 +46,7 @@ section{
     min-width: 320px;
     min-height: 80vh;
     background-image: linear-gradient(to bottom, #221405f3, #8d6e1ad2, #ecee85, #ccb94c, #eb8f43);
-    overflow: scroll;
+    overflow: hidden;
     position: relative;
 }
 
