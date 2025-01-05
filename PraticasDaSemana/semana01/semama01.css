@@ -1,8 +1,9 @@
 header {
-    background-color: #333;
+    background-color: #53d0d4;
     color: white;
     padding: 20px;
     text-align: center;
+    width: 100%;
   }
 
   nav{
@@ -12,6 +13,11 @@ header {
 
 }
 
+body{
+    background-color: #333;
+    min-width: 320px;
+    max-width: 2000px;
+}
 nav > button{
     color: #661366;
     padding: 10px;
@@ -30,4 +36,26 @@ nav > button:hover{
 
 button a{
     text-decoration: none;
+}
+
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, #3b250ef3, #c2910b, #ecee85, #cc9f4c, #eb8f43);
+
+}
+
+.sol{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 40px 20px #eeee89f3;
+    background-color: #f7f6f0f8;
+    
+    transition-duration: 2s;
+    /* transform: scale(1.5); */
 }
