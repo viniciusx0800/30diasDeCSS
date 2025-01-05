@@ -40,7 +40,7 @@ nav > button:hover{
     margin: 0;
   }
   
-  /* Navegação */
+  
   nav ul {
     list-style: none;
     padding: 0;
@@ -57,7 +57,11 @@ nav > button:hover{
     font-weight: bold;
   }
   
-  /* Conteúdo principal */
+  button a{
+    text-decoration: none;
+    color: #f4f4f4;
+  }
+  
   main {
     text-align: center;
     padding: 40px 20px;
@@ -68,7 +72,7 @@ nav > button:hover{
     margin-bottom: 20px;
   }
   
-  /* Botões de Prática */
+  
   .button-container {
     display: flex;
     flex-wrap: wrap;
@@ -98,7 +102,7 @@ nav > button:hover{
     outline: none;
   }
   
-  /* Rodapé */
+ 
   footer {
     background-color: #333;
     color: white;
