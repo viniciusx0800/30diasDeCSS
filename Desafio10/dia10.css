@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+body{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+div{
+    top: 50%;
+    left: 50%;
+    transform: translate(20% , 20%);
+    
+}
+
+
+header{
+    padding: 1px 5px 9px;
+    height: 10vh;
+    background-color: #0c4d81f6;
+}
+
+.titulo{
+    color: #fafdff;
+    display: grid;
+    justify-content: center;
+     
+}
+
+nav{
+    padding: 10px;
+    width: 90px;
+
+}
+
+nav > button{
+    color: #0d84e6e0;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 1s;
+    font-size: 1em;
+}
+
+nav > button:hover{
+    background-color: #065da5a4;
+    color: #ffffff;
+    width: 95px;
+}
+
+
+.imagem1{
+    position: absolute;
+    width: 50px;
+    animation: trocar1 2s alternate infinite;
+    animation-delay: 0s;
+    
+}
+
+.imagem2{
+    position: absolute;
+    width: 50px;
+    animation: trocar2 2s alternate-reverse infinite;
+    animation-delay: 0s;
+}
+
+.imagem3{
+    position: absolute;
+    width: 50px;
+    animation: trocar3 2s alternate infinite;
+    animation-delay: 0s;
+}
+
+h2{
+   margin: 50px;
+   font-family: "Pixelify Sans", serif ;
+}
+
+@keyframes trocar1{
+    0%{
+        opacity: 1;
+    }
+       
+    20% {
+        opacity: 0;
+    }
+    
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes trocar2{
+    0%{
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+
+    }
+    50%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes trocar3{
+    0%{
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
