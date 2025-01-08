@@ -1,0 +1,88 @@
+body{
+  
+}
+
+nav{
+    padding: 10px;
+    width: 90px;
+    box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.15),
+
+}
+
+nav > button{
+    color: #661366;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 1s;
+    font-size: 1em;
+}
+
+nav > button:hover{
+    background-color: #065da5a4;
+    color: #ffffff;
+    width: 95px;
+}
+
+
+.div00{
+    background-color: rgb(230, 4, 4);
+    position: relative;
+    width: 300px; 
+    height: 10px;
+    left: 30%;
+    top: 260px;
+    transform: translate(50%, 50%);
+    
+}
+
+.div01{
+    background-color: black;
+    position: relative;
+    width: 9px; 
+    height: 200px;
+    left: 55.4%;
+    top: 165px;
+    transform: translate(50%, 50%);
+    
+    
+}
+
+.div02{
+   background-color: black;
+    position: relative;
+    width: 8px; 
+    height: 200px;
+    left: 51.1%;
+    top: -35.1px;
+    transform: translate(50%, 50%);
+}
+
+.div03{
+  background-color: black;
+    position: relative;
+    width: 8px; 
+    height: 200px;
+    left: 47.1%;
+    top: -237.1px;
+    transform: translate(50%, 50%);
+}
+.div04{
+    background-color: black;
+    position: relative;
+    width: 8px; 
+    height: 200px;
+    left: 43.1%;
+    top: -435.1px;
+    transform: translate(50%, 50%);
+}
+.div05{
+    background-color: black;
+    position: relative;
+    width: 8px; 
+    height: 200px;
+    left: 38.6%;
+    top: -635.1px;
+    transform: translate(50%, 50%);
+}
