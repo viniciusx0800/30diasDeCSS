@@ -1,29 +1,79 @@
 body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+   
+}
+
+section{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-width: 320px;
+    min-height: 80vh;
+    background-color: #0e0d0e;
+    overflow: hidden;
+    position: relative;
 }
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #065da5a4;
+
+}
+
+.titulo{
+    color: #f0f8ff;
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    
+}
+
+nav{
+    padding: 10px;
+    width: 90px;
+    box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.15),
+
+}
+
+nav > button{
+    color: #661366;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 1s;
+    font-size: 1em;
+}
+
+nav > button:hover{
+    background-color: #065da5a4;
+    color: #ffffff;
+    width: 95px;
+}
+
 
 .coracao{
     position: absolute;
     width: 100px;
     height: 190px;
-    animation: bater 3s ease-out infinite;
+    animation: bater 1s ease-out infinite;
    
+}
+
+.coracao:nth-child(1){
+    animation-delay: .1s;
 }
 
 .coracao::before{
     content: '';
     position: absolute;
     top: 0;
-    left: 55px;
-    width: 80px;
-    height: 140px;
-    background: rgb(219, 217, 52);
+    left: 60px;
+    width: 100px;
+    height: 145px;
+    background: #ff5e00;
     border-radius: 50px 50px 0px 0px;
     transform: rotate(-45deg);
     transform-origin:bottom;
@@ -34,10 +84,10 @@ body{
     content: '';
     position: absolute;
     top: 0;
-    left: 0px;
-    width: 80px;
-    height: 140px;
-    background: red;
+    left: 10px;
+    width: 100px;
+    height: 155px;
+    background: #ff5e00;
     border-radius: 50px 50px 0px 0px;
     
     
