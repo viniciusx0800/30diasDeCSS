@@ -10,7 +10,7 @@ section{
     align-items: center;
     min-width: 320px;
     min-height: 80vh;
-    background-color: #0e0d0e;
+    background-color: #e026e0;
     overflow: hidden;
     position: relative;
 }
@@ -55,15 +55,16 @@ nav > button:hover{
 
 
 .coracao{
-    position: absolute;
-    width: 100px;
+    width:190px;
     height: 190px;
+    justify-content: center;
+    border-radius: 50px 50px 3px 3px;
+
     animation: bater 1s ease-out infinite;
-   
 }
 
 .coracao:nth-child(1){
-    animation-delay: .1s;
+    animation-delay: .5s;
 }
 
 .coracao::before{
@@ -72,8 +73,8 @@ nav > button:hover{
     top: 0;
     left: 60px;
     width: 100px;
-    height: 145px;
-    background: #ff5e00;
+    height: 165px;
+    background: #ffff;
     border-radius: 50px 50px 0px 0px;
     transform: rotate(-45deg);
     transform-origin:bottom;
@@ -83,25 +84,32 @@ nav > button:hover{
 .coracao::after{
     content: '';
     position: absolute;
-    top: 0;
-    left: 10px;
     width: 100px;
-    height: 155px;
-    background: #ff5e00;
+    height: 169px;
+    background: #ffff;
     border-radius: 50px 50px 0px 0px;
     
     
 }
 
 .coracao::after{
-    left: 0;
+    left: -7px;
     transform: rotate(45deg);
     transform-origin: bottom;
     
 }
 
 @keyframes bater{
-    100%{
+    0%{
+        transform: scale(1.2);
+    }
+    25%{
+        transform: scale(2.0);
+    }
+    75%{
         transform: scale(1.25);
+    }
+    100%{
+        transform: scale(1.5);
     }
  }
