@@ -1,16 +1,32 @@
 body{
-  
+  margin: 0;
+  padding: 0;
+  background-color: #252829;
+}
+
+
+
+header{
+    padding: 1px 5px 9px;
+    height: 10vh;
+    background-color: #0c4d81f6;
+}
+
+.titulo{
+    color: #fafdff;
+    display: grid;
+    justify-content: center;
+     
 }
 
 nav{
     padding: 10px;
     width: 90px;
-    box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.15),
 
 }
 
 nav > button{
-    color: #661366;
+    color: #0d84e6e0;
     padding: 10px;
     text-decoration: none;
     font-weight: bold;
@@ -26,63 +42,94 @@ nav > button:hover{
 }
 
 
-.div00{
-    background-color: rgb(230, 4, 4);
-    position: relative;
-    width: 300px; 
-    height: 10px;
-    left: 30%;
-    top: 260px;
-    transform: translate(50%, 50%);
+
+.seguraBola{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-top: 7px solid #ffff;
+    display: flex;
+    padding: 0 10px 8px;
     
 }
 
-.div01{
-    background-color: black;
-    position: relative;
-    width: 9px; 
-    height: 200px;
-    left: 55.4%;
-    top: 165px;
-    transform: translate(50%, 50%);
-    
-    
+
+
+.bola{
+   position: relative; 
+   display: block;
+   width: 3px;
+   height:190px;
+   background: #ffff;
+   margin: 0px 19px;
+   transform-origin: top;
 }
 
-.div02{
-   background-color: black;
-    position: relative;
-    width: 8px; 
-    height: 200px;
-    left: 51.1%;
-    top: -35.1px;
-    transform: translate(50%, 50%);
+
+.bola::before{
+    text-align: center;
+    content: '♡';
+    position: absolute;
+    bottom: -5px;
+    left: -18px;
+    width: 40px;
+    height: 40px;
+    background: #f5f3f3;
+    border-radius: 50%;
 }
 
-.div03{
-  background-color: black;
-    position: relative;
-    width: 8px; 
-    height: 200px;
-    left: 47.1%;
-    top: -237.1px;
-    transform: translate(50%, 50%);
+/* A pseudo-classe de CSS :first-child representa qualquer elemento que seja o primeiro filho de seus pais. */
+.bola:first-child{
+    animation: PrimeiraBola 1.5s linear infinite;
 }
-.div04{
-    background-color: black;
-    position: relative;
-    width: 8px; 
-    height: 200px;
-    left: 43.1%;
-    top: -435.1px;
-    transform: translate(50%, 50%);
+
+/* A CSS pseudo-classe :last-child representa qualquer elemento que é o último filho de seu elemento pai. */
+.bola:last-child{
+    animation: UltimaBola 1.5s linear infinite;
+    animation-delay: 0.8s;
 }
-.div05{
-    background-color: black;
-    position: relative;
-    width: 8px; 
-    height: 200px;
-    left: 38.6%;
-    top: -635.1px;
-    transform: translate(50%, 50%);
+
+
+
+@keyframes PrimeiraBola{
+
+    0%{
+        transform: rotate(0deg);
+    }
+
+
+    25%{
+        transform: rotate(60deg);
+    }
+
+
+    50%{
+        transform: rotate(0deg);
+    }
+
+    75%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes UltimaBola{
+
+    0%{
+        transform: rotate(0deg);
+    }
+
+
+    25%{
+        transform: rotate(-60deg);
+    }
+
+
+    50%{
+        transform: rotate(0deg);
+    }
+
+    75%{
+        transform: rotate(0deg);
+    }
 }
