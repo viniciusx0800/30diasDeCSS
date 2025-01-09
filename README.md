@@ -11,16 +11,16 @@ Fala Devs, beleza? 🖖
 ## Tabela de Pontuação
 
 2 pontos semanais: 1 ponto por conclusão dos desafios da semana, 1 ponto por comunicação.
-| Semana | Davi | Mate | Vini |  
-|--------|------|------|------|  
-| Semana 1 | 0 | 2 | 1 |  
-| Semana 2 | | | |  
-| Semana 3 | | | |  
-| Semana 4 | | | |  
-| Semana 5 | | | |  
-| Semana 6 | | | |  
-| Semana 7 | | | |  
-| Semana 8 | | | |
+| Semana   | Davi | Mate | Vini |
+|----------|------|------|------|
+| Semana 1 | 0    | 2    | 1    |
+| Semana 2 | 1    | 1    | 1    |
+| Semana 3 |      |      |      |
+| Semana 4 |      |      |      |
+| Semana 5 |      |      |      |
+| Semana 6 |      |      |      |
+| Semana 7 |      |      |      |
+| Semana 8 |      |      |      |
 
 ## Regras gerais
 
