@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Silkscreen:wght@400;700&display=swap');
 
 body{
 
     margin: 0;
     padding: 0;
+    background-color: rgb(19, 235, 217);
 
 }
 
@@ -51,43 +53,58 @@ nav > button:hover{
 }
 
 
+h2{
+    font-family: "Silkscreen", serif ;
+    font-weight: 200px;
+    font-size: 50px;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    
+ }
+ 
+ span{
+    filter: drop-shadow(3px 4px 2px #130101) ;
+    left:290px;
+ }
+
 .imagem1{
     position: absolute;
-    width: 50px;
     animation: trocar1 2s alternate infinite;
-    animation-delay: 0s;
     
 }
 
 .imagem2{
     position: absolute;
-    width: 50px;
     animation: trocar2 2s alternate-reverse infinite;
-    animation-delay: 0s;
+   
+    
 }
 
 .imagem3{
     position: absolute;
-    width: 50px;
     animation: trocar3 2s alternate infinite;
-    animation-delay: 0s;
+  
+  
 }
 
-h2{
-   margin: 50px;
-   font-family: "Pixelify Sans", serif ;
-}
+
 
 @keyframes trocar1{
     0%{
         opacity: 1;
     }
        
-    20% {
+    25% {
         opacity: 0;
     }
     
     50%{
+        opacity: 0;
+    }
+
+    75%{
         opacity: 0;
     }
 
@@ -100,11 +117,15 @@ h2{
     0%{
         opacity: 0;
     }
-    20% {
+    25% {
         opacity: 0;
 
     }
     50%{
+        opacity: 0;
+    }
+
+    75%{
         opacity: 1;
     }
 
