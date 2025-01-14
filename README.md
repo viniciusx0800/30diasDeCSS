@@ -15,7 +15,7 @@ Fala Devs, beleza? 🖖
 |----------|------|------|------|
 | Semana 1 | 0    | 2    | 1    |
 | Semana 2 | 1    | 1    | 1    |
-| Semana 3 |      |      |      |
+| Semana 3 | 1    | 2    | 2    |
 | Semana 4 |      |      |      |
 | Semana 5 |      |      |      |
 | Semana 6 |      |      |      |
