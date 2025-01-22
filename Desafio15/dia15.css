@@ -1,0 +1,77 @@
+body{
+background-color: rgba(3, 22, 24, 0.438);
+}
+
+header{
+    padding: 1px 5px 9px;
+    height: 10vh;
+    background-color: #0c4d81f6;
+}
+
+.titulo{
+    color: #fafdff;
+    display: grid;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     
+}
+
+nav{
+    padding: 10px;
+    width: 90px;
+
+}
+
+nav > button{
+    color: #0d84e6e0;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 1s;
+    font-size: 1em;
+}
+
+h2{
+    color: #1af78ffa;
+    letter-spacing: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+    filter: drop-shadow(1px 27px 3.5px  #20202028) ;
+    text-align: center;
+    position: relative;
+    
+
+}
+
+.kowalski{
+    animation: rotate 6s linear infinite;
+}
+
+.biu{
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(7deg);
+    }
+
+    25%{
+        transform: rotate( -8deg);
+    }
+
+    50%{
+        transform: rotate(6deg);
+    }
+
+    75%{
+        transform: rotate(-6deg);
+    }
+
+    100%{
+        transform: rotate(6deg);
+    }
+}
