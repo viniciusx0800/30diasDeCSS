@@ -1,4 +1,56 @@
-h1{
-    background: #34f;
-    color: #223;
+body {
+	background-color: rgb(10, 10, 10);
 }
+
+header{
+    padding: 1px 5px 9px;
+    height: 10vh;
+    background-color: #0c4d81f6;
+}
+
+.titulo{
+    color: #fafdff;
+    display: grid;
+    justify-content: center;
+     
+}
+
+
+nav > button{
+    color: #0d84e6e0;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 1s;
+    font-size: 1em;
+    margin: 10px;
+}
+
+nav > button:hover{
+    background-color: #065da5a4;
+    color: #ffffff;
+    width: 95px;
+}
+
+h2 {
+	font-size: 100px;
+	text-align: center;
+	text-transform: uppercase;
+	background: url(gokus.webp);
+	-webkit-background-clip: text;
+	color: transparent;
+	animation: passa 20s linear infinite;
+}
+
+@keyframes passa {
+
+	0%{ 
+    background-position: 0 0;
+    }
+
+	100%{ 
+    background-position: 100% 100%; 
+    }
+
+} 
