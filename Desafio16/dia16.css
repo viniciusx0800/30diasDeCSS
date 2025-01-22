@@ -63,13 +63,13 @@ div{
 }
 
 .button::before{
-    content: '✔️ Dia 16';
+    content: '✅ Dia 16';
     top: 0;
     left: 0;
     transform: translateY(-100%);
     width: 100%;
     height: 100%;
-    background: #9237fa;
+    background: #05f360;
     position: absolute;
 	display: flex;
     text-align: center;
@@ -79,7 +79,8 @@ div{
 }
 
  a:hover:before {
-    height: 0%;
+    transform: translate(0%);
+   
 	
    
 } 
