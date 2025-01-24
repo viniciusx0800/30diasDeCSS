@@ -12,7 +12,11 @@ header {
     box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.15),
 
 }
-
+body{
+    background: rgba(0, 0, 0, 0.781);
+    min-width: 320px;
+    max-width: 2000px;
+}
 nav > button{
     color: #f7f7f7;
     padding: 10px;
