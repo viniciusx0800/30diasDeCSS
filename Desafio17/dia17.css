@@ -1,18 +1,49 @@
 body{
-    background:  #050505;
+    background:  #091424;
 }
 
-
-h1{
-    color: aqua;
+header{
+    padding: 1px 5px 9px;
+    height: 10vh;
+    background-color: #0c4d81f6;
 }
+
+.titulo{
+    color: #fafdff;
+    display: grid;
+    justify-content: center;
+     
+}
+
+nav{
+    padding: 10px;
+    width: 90px;
+
+}
+
+nav > button{
+    color: #0d84e6e0;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 1s;
+    font-size: 1em;
+}
+
+nav > button:hover{
+    background-color: #065da5a4;
+    color: #ffffff;
+    width: 95px;
+}
+
 
 .reservados{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #0442a0;
+    background: #0695e7fa;
     width: 100px;
     height: 100px;
     border-radius: 10px;
@@ -23,21 +54,12 @@ h1{
 
 @keyframes tresentos60{
     0%{
-        transform: rotateY(180deg);
-    }
-    100%{
-        transform: rotateX(0deg);
-    }
-    40%{
-        transform: rotateX(0deg);
-    }
-    60%{
-        transform: rotateX(90deg);
+        transform: perspective(200px) rotateX(0deg) rotateY(0deg);
     }
     80%{
-        transform: rotateY(0deg);
+        transform: perspective(200px) rotateX(180deg) rotateY(0deg);
     }
     100%{
-        transform: rotateY(0deg);
+        transform: perspective(200px) rotateX(180deg) rotateY(-180deg);
     }
 }
