@@ -36,3 +36,43 @@ nav > button:hover{
     color: #ffffff;
     width: 95px;
 }
+
+div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    padding: 0 10px 8px;
+}
+ 
+.button{
+    color: #f1f1f1;
+    font-size: 31px;
+    font-weight: 600;
+    padding: 15px;
+    text-decoration: none;
+    overflow: hidden;
+    border: 3px solid #ebf3ee;  
+    position: relative;
+}
+
+.button:hover{
+    background-color: #000000;
+}
+
+.button:before 
+{
+	content: '';
+	background-color: #44d87c;
+	width: 100%;
+	height: 40px;
+	position: absolute;
+	transform: translate(100%) rotateZ(45deg);
+	transition:  0.1s;
+}
+
+.button:hover:before{
+   
+    transform: translate(-100%) rotateZ(45deg);
+}
