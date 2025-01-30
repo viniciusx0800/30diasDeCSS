@@ -55,30 +55,32 @@ section{
     width: 100%;
     height: 100vh;
     overflow: hidden;
+   
 }
 
 .bubbles{
     display: flex;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    animation: roda 16s linear infinite;
+   
+   
 }
 
 .bubbles span{
     position: relative;
     width: 30px;
     height: 30px;
-    background: #8ce2a6;
+    background: #69dd8c;
     box-shadow: 0 0 20px rgb(76, 238, 35),
     0 0 40px rgb(43, 255, 0),
-    0 0 60px rgb(0, 217, 255),
-    0 0 80px rgb(255, 0, 0),
-    0 0 0 8px rgba(0, 255, 13, 0.1);
+    0 0 60px rgb(0, 255, 21),
+    0 0 80px rgb(0, 255, 115),
+    0 0 0 8px rgba(0, 255, 149, 0.1);
     margin: 0 4px;
     border-radius: 50%;
-    animation: anima 35s linear infinite;
-    animation-duration: calc(125s / var(--i));
+    animation: anima 35s alternate-reverse infinite;
+   
+    animation-duration: calc(185s / var(--i));
 }
 
 .bubbles span:nth-child(1){
@@ -88,6 +90,7 @@ section{
                 0 0 60px rgb(0, 47, 255),
                 0 0 80px rgb(0, 47, 255),
                 0 0 0 8px rgba(0, 68, 255, 0.1);
+              
 }
 .bubbles span:nth-child(2){
     background: rgb(234, 0, 255);
@@ -162,21 +165,117 @@ section{
                 0 0 80px rgb(255, 255, 255),
                 0 0 0 8px rgba(255, 255, 255, 0.1);
 }
+.bubbles span:nth-child(11){
+    background: rgb(0, 119, 255);
+    box-shadow: 0 0 20px rgb(0, 81, 255),
+                0 0 40px rgb(0, 68, 255),
+                0 0 60px rgb(0, 47, 255),
+                0 0 80px rgb(0, 47, 255),
+                0 0 0 8px rgba(0, 68, 255, 0.1);
+              
+}
+.bubbles span:nth-child(12){
+    background: rgb(234, 0, 255);
+    box-shadow: 0 0 20px rgb(255, 0, 242),
+                0 0 40px rgb(255, 0, 221),
+                0 0 60px rgb(212, 0, 255),
+                0 0 80px rgb(255, 0, 242),
+                0 0 0 8px rgba(255, 0, 212, 0.1);
+}
+.bubbles span:nth-child(13){
+    background: rgb(255, 8, 0);
+    box-shadow: 0 0 20px rgb(255, 0, 0),
+                0 0 40px rgb(255, 0, 0),
+                0 0 60px rgb(255, 0, 0),
+                0 0 80px rgb(255, 0, 0),
+                0 0 0 8px rgba(255, 0, 0, 0.1);
+}
+.bubbles span:nth-child(14){
+    background: rgb(34, 33, 33);
+    box-shadow: 0 0 20px rgb(105,105,105),
+                0 0 40px rgb(128,128,128),
+                0 0 60px rgb(169,169,169),
+                0 0 80px rgb(192,192,192),
+                0 0 0 8px rgba(211,211,211);
+}
+.bubbles span:nth-child(15){
+    background: rgb(0, 183, 255);
+    box-shadow: 0 0 20px rgb(0, 204, 255),
+                0 0 40px rgb(0, 225, 255),
+                0 0 60px rgb(0, 183, 255),
+                0 0 80px rgb(0, 204, 255),
+                0 0 0 8px rgba(0, 247, 255, 0.1);
+}
+.bubbles span:nth-child(16){
+    background: rgb(255, 123, 0);
+    box-shadow: 0 0 20px rgb(255, 102, 0),
+                0 0 40px rgb(255, 123, 0),
+                0 0 60px rgb(255, 102, 0),
+                0 0 80px rgb(255, 136, 0),
+                0 0 0 8px rgba(255, 102, 0, 0.1);
+}
+.bubbles span:nth-child(17){
+    background: rgba(255,214,0,1);
+    box-shadow: 0 0 20px rgba(255,214,0,1),
+                0 0 40px rgba(255,214,0,1),
+                0 0 60px rgba(255,214,0,1),
+                0 0 80px rgba(255,214,0,1),
+                0 0 0 8px rgba(255,214,0,.1);
+}
+.bubbles span:nth-child(18){
+    background: rgb(162, 0, 255);
+    box-shadow: 0 0 20px rgb(212, 0, 255),
+                0 0 40px rgb(162, 0, 255),
+                0 0 60px rgb(174, 0, 255),
+                0 0 80px rgb(162, 0, 255),
+                0 0 0 8px rgba(174, 0, 255, 0.1);
+}
+
+.bubbles span:nth-child(19){
+    background: rgb(255, 72, 0);
+    box-shadow: 0 0 20px rgb(255, 102, 0),
+                0 0 40px rgb(255, 60, 0),
+                0 0 60px rgb(255, 81, 0),
+                0 0 80px rgb(255, 102, 0),
+                0 0 0 8px rgba(255, 115, 0, 0.1);
+}
+.bubbles span:nth-child(20){
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 20px rgb(248, 248, 247),
+                0 0 40px rgb(248, 248, 248),
+                0 0 60px rgb(250, 250, 250),
+                0 0 80px rgb(255, 255, 255),
+                0 0 0 8px rgba(255, 255, 255, 0.1);
+}
+
 
 @keyframes anima{
     0%{
        
-        transform: translateY(100vh) scale(1)  rotate(0deg);
+        transform: translateY(100vh) scale(0);
     }
 
     50%{
       
-        transform: translateY(-100vh)  scale(2) rotate(180deg);
+        transform: translateY(-100vh)  scale(0.5);
     }
 
     100%{
       
-        transform: translateY(100vh) scale(0) rotate(360deg);
+        transform: translateY(100vh) scale(0);
     }
 }
 
+
+
+@keyframes roda{
+    from{
+        transform: rotate(0deg);
+        filter: hue-rotate(0deg);
+      
+    }
+    to{
+        filter: hue-rotate(3.142rad);
+        transform: rotate(360deg);
+    }
+}
