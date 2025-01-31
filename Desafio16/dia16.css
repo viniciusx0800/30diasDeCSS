@@ -69,10 +69,10 @@ div{
     transform: translateY(-100%);
     width: 100%;
     height: 100%;
-    background: #05f360;
+    background: #022729;
     position: absolute;
 	display: flex;
-    text-align: center;
+    align-items: center;
 	justify-content: center;
 	transition: 1s;
 
