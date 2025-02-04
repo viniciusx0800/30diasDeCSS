@@ -1,0 +1,29 @@
+body{
+    background-color: #030303;
+}
+.button{
+    width: 200px;
+    display: flex;
+    text-transform: uppercase;
+    color: #278b49;
+    font-size: 31px;
+    font-weight: 600;
+    padding: 26px;
+    text-decoration: none;
+    border: 3px solid #2fa055;  
+    margin: 0 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button:hover{
+    color: #f3f7f4;
+    transition: 0.1s;
+    border: 3px solid #faf8f9;
+}
+
+.btn:hover{
+   
+}
