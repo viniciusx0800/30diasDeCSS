@@ -1,0 +1,84 @@
+body{
+    background: rgb(255, 255, 255);
+}
+
+
+img{
+    width: 100px;
+   
+}
+
+.div01{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+	justify-content: center;
+    border-radius: 50%;
+    border: 4px solid blue;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%)
+}
+
+
+.div02{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+	justify-content: center;
+    border-radius: 50%;
+    border: 4px solid blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+
+.div03{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+	justify-content: center;
+    border-radius: 50%;
+    border: 4px solid blue;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%)
+}
+
+
+.div04{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+	justify-content: center;
+    border-radius: 50%;
+    border: 4px solid blue;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%)
+}
+
+.div04:hover{
+    animation: roda 1s linear infinite;
+}
+
+
+
+
+@keyframes roda{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
