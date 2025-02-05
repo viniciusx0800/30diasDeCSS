@@ -1,29 +1,87 @@
 body{
-    background-color: #030303;
+    background-color: #363131;
 }
-.button{
-    width: 200px;
-    display: flex;
-    text-transform: uppercase;
-    color: #278b49;
-    font-size: 31px;
-    font-weight: 600;
-    padding: 26px;
+ 
+header{
+    padding: 1px 5px 9px;
+    height: 10vh;
+    background-color: #0c4d81f6;
+}
+
+.titulo{
+    color: #fafdff;
+    display: grid;
+    justify-content: center;
+     
+}
+
+nav{
+    padding: 10px;
+    width: 90px;
+
+}
+
+nav > button{
+    color: #60c5ffe0;
+    padding: 10px;
     text-decoration: none;
-    border: 3px solid #2fa055;  
-    margin: 0 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 1s;
+    font-size: 1em;
+}
+
+nav > button:hover{
+    background-color: #065da5a4;
+    color: #ffffff;
+}
+
+.recruta{
     position: absolute;
-    top: 50%;
     left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+	justify-content: center;
 }
 
-.button:hover{
-    color: #f3f7f4;
-    transition: 0.1s;
-    border: 3px solid #faf8f9;
+.capitao{
+    background: #363131;
+    color: rgb(0, 128, 49);
+    border: 3px solid rgb(0, 128, 49);
+    border-radius: 1px;
+    width: 700px;
+    height: 110px;
+    letter-spacing: 8px;
+    font-size: 40px;
 }
 
-.btn:hover{
-   
+.capitao:hover{
+    color: #fafdff;
+    border: 3px solid rgb(255, 255, 255);
+    background: #363131;
+    animation: rotate 0.5s linear infinite;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(5deg);
+    }
+
+    25%{
+        transform: rotate( -6deg);
+    }
+
+    50%{
+        transform: rotate(5deg);
+    }
+
+    75%{
+        transform: rotate(-5deg);
+    }
+
+    100%{
+        transform: rotate(5deg);
+    }
 }
