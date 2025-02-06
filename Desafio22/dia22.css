@@ -1,8 +1,38 @@
-body {
+ body {
     margin: 0;
     padding: 0;
-    background: #f70268;
+    background: #050830;
   
+}
+
+header{
+    width: 100%;
+    padding: 1px 5px 9px;
+    height: 10vh;
+    background-color: #0c4d81f6;
+}
+
+.titulo{
+    color: #fafdff;
+    display: flex;
+    justify-content: center;
+}
+
+nav > button{
+    color: #0d84e6e0;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 1s;
+    font-size: 1em;
+    margin: 10px;
+}
+
+nav > button:hover{
+    background-color: #065da5a4;
+    color: #ffffff;
+    width: 95px;
 }
 
 ul {
@@ -15,15 +45,15 @@ ul {
     margin: 0;
 }
 
-ul li {
+ul li{
     list-style: none;
     float: left;
     line-height: 100px;
     margin: 20px;
-    width: 190px;
-    height: 190px;
+    width: 200px;
+    height: 200px;
     background: #ffffff;
-    border: 4px solid black;
+    border: 4px solid #05f5a5;
     border-radius: 50%;
     position: relative;
     overflow: hidden;
@@ -32,188 +62,67 @@ ul li {
     justify-content: center;
     align-items: center;
     z-index: 1;
-
 }
 
-ul li img {
-    width: 50%;
-    transition: transform 0.3s ease;
-}
-
-ul li:hover {
-    color: #f70268;
-    transform: scale(1.1);
+ul li i {
+    font-size: 48px;
+    color: #0a3d62;
+    transition: 0.5s;
 }
 
 ul li:hover img {
-    transform: scale(1.2);
+    color: rgb(255, 0, 0);
 }
 
 ul li::before {
     content: '';
-    width: 20px;
-    height: 240px;
+    width: 200px;
+    height: 200px;
+    background: #00a16c;
     position: absolute;
-    background: rgb(8, 114, 49);
     border-radius: 50%;
     transform: scale(0);
     transition: transform 0.3s ease;
-    border: 3px dotted rgb(0, 0, 0);
     z-index: -1;
-   
 }
 
-.BolaDois:hover{
-    border: 3px dotted rgb(0, 0, 0);
-    height: 200px;
-    width: 200px;
+ul li:after {
+    content: '';
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-    animation: roda 1s linear infinite;
-}
+    border:2px dashed #007740;
+    opacity: 0;
+    z-index: -1;
+  }
+  
+ul li:hover:after {
+    opacity: 1;
+    animation: roda 10s linear infinite;
+  }
 
 ul li:hover::before {
-    transform: scale(.7);
+    opacity: 1;
+    transform: scale(0.8);
 }
 
+ul li:hover i {
+   color: #ffffff;
+  }
 
-@keyframes roda{
+
+  @keyframes roda{
     from{
         transform: rotate(0deg);
+        filter: hue-rotate(0deg);
+      
     }
     to{
+        filter: hue-rotate(3.142rad);
         transform: rotate(360deg);
     }
-} 
-
-
-
-/* body{
-    margin: 0;
-    padding: 0;
-    background: #f70268;
 }
-
-
-
- img{
-    width: 90px;
-} 
-
-ul{
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-ul li{
-   list-style: none; 
-   float: left;
-   margin: 10px;
-   width: 300px;
-   height: 300px;
-   line-height: 100px;
-   text-align: center;
-   background: #fff;
-   border-radius: 50%;
-   position: relative;
-   transition: .5 ease-in-out;
-   color: #262626;
-   z-index: 1;
-}
-
-ul li::before{
-    content: '';
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    background: #424242;
-    border-radius: 50%;
-    transform: scale(0);
-    transition: .5 ease-in-out;
-    z-index: -1;
-}
-
-ul li:hover:before{
-    transform: scale(.5);
-}
-
-ul li:hover{
-    color: #f70268;
-}
-
-
- */
-
-
-
-
-/* 
-.div01{
-    width: 150px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-	justify-content: center;
-    border-radius: 50%;
-    border: 4px solid blue;
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translate(-50%, -50%)
-}
-
-
-.div02{
-    width: 150px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-	justify-content: center;
-    border-radius: 50%;
-    border: 4px solid blue;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
-}
-
-
-.div03{
-    width: 150px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-	justify-content: center;
-    border-radius: 50%;
-    border: 4px solid blue;
-    position: absolute;
-    top: 50%;
-    left: 60%;
-    transform: translate(-50%, -50%)
-}
-
-
-.div04{
-    width: 150px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-	justify-content: center;
-    border-radius: 50%;
-    border: 4px solid blue;
-    position: absolute;
-    top: 50%;
-    left: 70%;
-    transform: translate(-50%, -50%)
-}
-
-.div04:hover{
-    animation: roda 1s linear infinite;
-}
-
-
-
-
