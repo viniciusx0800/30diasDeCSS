@@ -1,8 +1,8 @@
-## 🚀 30diasDeCSS 🚀
+# 🚀 30diasDeCSS 🚀
 
 Fala Devs, beleza? 🖖
 
-30 dias de CSS3, é um desafio que visa ajudá-lo a melhorar suas habilidades de codificação fazendo mini projetos diarios utilizando HTML5 e CSS3
+30 dias de CSS3, é um desafio que visa ajudá-lo a melhorar suas habilidades de codificação fazendo mini projetos diários utilizando HTML5 e CSS3
 
 ## Objetivo
 
@@ -11,13 +11,14 @@ Fala Devs, beleza? 🖖
 ## Tabela de Pontuação
 
 2 pontos semanais: 1 ponto por conclusão dos desafios da semana, 1 ponto por comunicação.
+
 | Semana   | Davi | Mate | Vini |
-|----------|------|------|------|
+| -------- | ---- | ---- | ---- |
 | Semana 1 | 0    | 2    | 1    |
 | Semana 2 | 1    | 1    | 1    |
-| Semana 3 | 1    | 2    | 2    |
-| Semana 4 |      |      |      |
-| Semana 5 |      |      |      |
+| Semana 3 | 2    | 2    | 2    |
+| Semana 4 | 2    | 2    | 2    |
+| Semana 5 | 2    | 1    | 2    |
 | Semana 6 |      |      |      |
 | Semana 7 |      |      |      |
 | Semana 8 |      |      |      |
@@ -26,15 +27,15 @@ Fala Devs, beleza? 🖖
 
 - Realizar um projeto por dia
 - Compartilhe seu progresso no grupo diariamente
-- Postart tudo no github diariamente (mesmo que não tenha finalizado)
-- Compartilhar a cada quinze dias os desafios feitos no linkedin
-- Sem ajuda de: IA, Mauricio e Madu
-- No final do período, apresentar sobre um assunto determidado por sorteio
+- Postar tudo no github diariamente (mesmo que não tenha finalizado)
+- Compartilhar a cada quinze dias os desafios feitos no LinkedIn
+- Sem ajuda de: IA e Mauricio
+- No final do período, apresentar sobre um assunto determinado por sorteio
 
 ## Documentação
 
 - [MDN CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-- [MDN HMTL](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+- [MDN HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [Guia de Busca Rápida](https://devdocs.io/)
 
 ### Semana 1
