@@ -48,7 +48,7 @@ main {
 button {
   padding: 15px 30px;
   margin: 10px;
-  background-color: #4a63f0;
+  background-color: #080d2c;
   color: #ffffff;
   border: none;
   border-radius: 5px;
@@ -68,7 +68,8 @@ button {
 
 button:hover {
   transition-duration: 0.5s;
-  background-color: #59e7b1;
+  background-color: #074732;
+  animation: animate 5s linear infinite;
 }
 
 
@@ -88,4 +89,15 @@ footer a {
 
 .linkedin:hover{
   color: #57e7db;
+}
+@keyframes animate
+{
+    0%
+    {
+        filter: hue-rotate(0deg);
+    }
+    100%
+    {
+        filter: hue-rotate(360deg);
+    }
 }
