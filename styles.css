@@ -1,5 +1,4 @@
-
-body {
+ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -39,11 +38,13 @@ nav ul li a {
   color: #00ffff;
 }
 
+
 main {
   text-align: center;
   margin: 0;
   padding: 190px;
 }
+
 
 button {
   padding: 15px 30px;
@@ -55,15 +56,6 @@ button {
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.2s;
-}
-
-.btn{
-  color: #f8f8f8;
-  background-color: brown;
-}
-
-.btn:hover{
-  background-color: #333;
 }
 
 button:hover {
@@ -90,14 +82,81 @@ footer a {
 .linkedin:hover{
   color: #57e7db;
 }
-@keyframes animate
-{
-    0%
-    {
-        filter: hue-rotate(0deg);
-    }
-    100%
-    {
-        filter: hue-rotate(360deg);
-    }
+
+@keyframes animate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  
+  h1 {
+    font-size: 24px;
+  }
+
+  
+  nav ul {
+    text-align: center;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  nav ul li a {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  
+  main {
+    padding: 100px 10px;
+  }
+
+  
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .desafio {
+    width: 45%;
+    margin: 10px;
+    font-size: 14px;
+  }
+
+  
+  footer {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  
+  .desafio {
+    width: 80%;
+    font-size: 12px;
+  }
+
+  
+  h1 {
+    font-size: 20px;
+  }
+
+  
+  header {
+    padding: 10px;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+    padding: 5px;
+  }
 }
